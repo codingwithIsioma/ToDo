@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arimo', sans-serif;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 35rem;
+  max-height: 80vh;
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);*/
+  transition: all 0.3s linear;
+  padding: 1rem;
+  overflow: hidden;
+  overflow: scroll;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+  
+}
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.section-center h3 {
+  font-size: 1.7em;
+  font-weight: lighter;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.alert {
+  margin-top: 2rem;
+  height: 1.25rem;
+  border-radius: 0.25rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+
+.alert-success {
+  color: #155724;
+  background: #d4edda;
+}
+/*----------- add to list---------------- */
+
+.todo-container {
+  margin-top: 2rem;
+  transition: all 0.3s linear;
+  visibility: hidden;
+}
+.show-container {
+  visibility: visible;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  transition: all 0.3s linear;
+  padding: 0.7rem 1.4rem;
+  border-radius: 1.5rem;
+  text-transform: initial;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.089);
+}
+
+.title {
+  font-weight: 100;
+}
+
+.title::first-letter {
+  text-transform: uppercase;
+}
+
+.check-btn,
+.uncheck-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 1.3rem;
+  margin: 0 0.15rem;
+}
+
+
+/* check text */
+
+.fa-check-circle{
+  color: rgb(31, 255, 31);
+}
+
+.fa-circle-thin{
+  color: rgba(0,0,0,0.1);
+}
+
+.todo-checked{
+  text-decoration: line-through;
+  color: #ccc;
+  transition: all 0.3s linear;
+}
+
+
+/*------------- adding input form -----------*/
+
+/* .todo-form {
+  margin-top: 1.5rem; */
+  /* border-top: 1px solid rgba(0,0,0,0.1); */
+/* } */
+.todo-form {
+  position: absolute;
+  bottom: 20px;
+  margin-top: 1.5rem;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.add-btn {
+  background: transparent;
+  border-color: transparent;
+  flex: 0 0 3rem;
+  display: grid;
+  cursor: pointer;
+}
+.add-btn i{
+  color: #4162f6;
+  font-size: 40px;
+  content: #49a6e9;
+  transition: all 0.3s linear;
+}
+
+.add-btn i:hover{
+  color: #69b8f0;
+}
+
+#todo {
+  padding: 0.25rem;
+  padding-left: 1rem;
+  border-radius: 1.4rem;
+  border-color: transparent;
+  background: hsl(210, 36%, 96%);
+  flex: 1 0 auto;
+  max-width: 300px;
+}
+
+#todo::placeholder {
+  color: hsl(210, 22%, 43%);
+}

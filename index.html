@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="section-center">
+            <div>
+                <h3>All Tasks</h3>
+                <p class="alert"></p>  
+            </div>
+            <!-- add to list -->
+            <div class="todo-container">
+                <div class="todo-list">
+                    <!-- <article class="todo-item">
+                        <p class="title">Create new project</p>
+                        <div class="btn-container">
+                            <button type="button" class="check-btn">
+                                <span class="unchecked-icon">
+                                    <i class="fa fa-circle-thin"></i>   
+                                </span>
+                                <span class="checked-icon">
+                                    <i class="fa fa-check-circle"></i>  
+                                </span>
+                            </button>
+                        </div>
+                    </article> -->
+                </div>
+            </div>
+            <!-- input form -->
+            <form class="todo-form">
+                <div class="form-control">
+                    <button type="submit" class="add-btn"><i class="fa fa-plus-circle"></i></button>
+                    <input type="text" id="todo" placeholder="Add task">
+                </div>
+            </form>
+        </section>
+        <script src="app.js"></script>
+    </body>
+</html>
